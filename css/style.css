@@ -1,0 +1,359 @@
+@import url(reset.css);
+@import url(common.css);
+@import url(variables.css);
+
+/*-------------
+ TYPOGRAPHY
+------------ */
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*-------------
+ HEADER
+------------ */
+
+header{
+    background-color: var(--first-color);
+}
+
+.header-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link{
+    padding: 0 .3125rem;
+}
+.btn-header{
+    border: none;
+    border-radius: 20px;
+    padding: .3125rem .625rem;
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1024px){
+    .burger-menu{
+        display: none;
+    }
+
+    .header-nav{
+        display: flex;
+    }
+}
+/* /Responsive Desktop */
+
+/*-------------
+ /HEADER
+------------ */
+
+/*-------------
+ MAIN
+------------ */
+
+/* Higlights Section */
+
+.highlights-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.highlights-col{
+    width: 100%;
+    margin-bottom: 1.5625rem;
+    padding: 1.25rem 1.25rem;
+    border-radius: 1.25rem;
+    background-color: var(--second-color);
+}
+.btn-apple{
+    padding: .625rem 3.125rem;
+    border: none;
+    border-radius: 1.25rem;
+    color: white;
+    background-color: var(--first-color);
+}
+.demo-app > h2{
+    color: var(--first-color);
+}
+.highlights-col.smart{
+    text-align: center;
+}
+
+/* Responsive Tablet */
+@media screen and (min-width: 726px) {
+    .highlights-col:first-child{
+        width: calc( (98% / 3) *2 );
+    }
+                                                        
+    .highlights-col{
+        width: 31%;
+    }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1025px) {
+    .highlights-col:first-child{
+        /* width: calc( (98% / 3) *2 ); */
+        display: flex;
+    }
+    .demo-app{
+        width: 50%;
+    }
+    .image{
+        width: 50%;
+    }
+    .image > img{
+        width: 100%;
+    }
+
+    .highlights-col{
+        width: 31%;
+    }
+}
+
+/* /Higlights Section */
+
+/* Strategics Section */
+
+.strategics{
+    background-color: var(--third-color);
+}
+
+.strategics-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.strategics-col{
+    width: 50%;
+    margin: 1.5625rem 0;
+    /* DEBUG */
+    /* background-color: aqua; */
+    /* /DEBUG */
+}
+.strategics-small{
+    width: 50%;
+    background-color: white;
+    border-radius: 3.125rem;
+}
+.content{
+    width: 100%;
+    padding: .625rem;
+    text-align: center;
+}
+.content > img{
+    max-width: 200px;
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1025px) {
+    .strategics-row{
+        justify-content: space-between;
+    }
+
+    .strategics-col{
+        width: 48%;
+    }
+
+    .strategics-small{
+        align-self: flex-end;
+    }
+}
+
+/* /Strategics Section */
+
+/* Staff Section */
+
+.staff-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.staff-col{
+    width: 100%;
+    margin: 1.25rem 0;
+    /* DEBUG */
+    background-color: beige;
+    /* /DEBUG */
+}
+
+.staff-card{
+    background-color: var(--third-color);
+}
+.staff-card-row{
+    display: flex;
+}
+.profile-picture{
+    width: 20%;
+}
+.profile-picture > img{
+    display: block;
+}
+.profile-desription{
+    width: 80%;
+}
+
+/* /Staff Section */
+
+/* Benefits Section */
+
+.benefits{
+    background-color: var(--third-color);
+}
+
+.benefits-title{
+    text-align: center;
+    color: white;
+    font-size: 1.5625rem;
+    padding: 2.1875rem 0;
+}
+
+.benefits-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.benefits-col{
+    width: 100%;
+    margin-bottom: 1.5625rem;
+    padding: 1.25rem 1.25rem;
+    border-radius: 1.25rem;
+    background-color: white;
+}
+
+/* Responsive Tablet */
+@media screen and (min-width: 726px) {
+
+    .benefits-row{
+        justify-content: space-between;
+    }
+
+    .benefits-col{
+        width: 48%;
+    }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1025px) {
+
+    .benefits-row{
+        justify-content: space-between;
+    }
+
+    .benefits-col{
+        width: 31%;
+    }
+}
+
+/* /Benefits Section */
+
+/* About Us Section */
+
+.about-us-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about-us-col{
+    width: 100%;
+    margin-bottom: 1.5625rem;
+}
+.about-us-col-parag{
+    width: 70%;
+}
+.about-us-col-findme{
+    width: 30%;
+}
+
+/* Responsive Tablet */
+@media screen and (min-width: 726px) {
+
+    .about-us-row{
+        justify-content: space-between;
+    }
+
+    .about-us-col{
+        width: 48%;
+        align-self: flex-start;
+    }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1025px) {
+
+    .about-us-col{
+        padding: 0 3.125rem;
+    }
+}
+
+/* /About Us Section */
+
+/*-------------
+ /MAIN
+------------ */
+
+/*-------------
+ FOOTER
+------------ */
+
+/* Footer Section One */
+
+.footer-one{
+    text-align: center;
+    background-color: var(--third-color);
+}
+
+.footer-text{
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
+}
+
+.first-title{
+    font-size: 1.25rem;
+}
+
+.footer-list{
+    padding-bottom: 1.25rem;
+}
+
+.footer-nav-link{
+    display: inline;
+}
+
+
+/* /Footer Section One */
+
+/* Footer Section two */
+
+.footer-two{
+    text-align: center;
+    padding-bottom: .625rem;
+    background-color: var(--footer-two-color);
+}
+
+.footer-two-text{
+    color: white;
+    padding-top: 1.25rem;
+    padding-bottom: 1.875rem;
+}
+
+/* /Footer Section two */
+
+/*-------------
+ /FOOTER
+------------ */

@@ -1,0 +1,44 @@
+/*-------------
+ COMMON
+------------ */
+.nav-list{
+    color: white;
+}
+.highlights-col > i{
+    color: var(--first-color);
+    font-size: 3.75rem;
+}
+.highlights-col > h2{
+    color: var(--first-color);
+    margin: .625rem 0;
+}
+
+.container{
+    max-width: 75rem;
+    margin: auto;
+    padding: 1.25rem 1.25rem;
+}
+
+.section-margin{
+    margin-top: 1.25rem;
+}
+img{
+    width: 100%;
+}
+
+/*-------------
+ BUTTONS
+------------ */
+
+.footer-btn{
+    padding: .3125rem .3125rem;
+    margin-bottom: .9375rem;
+}
+
+/*-------------
+ /BUTTONS
+------------ */
+
+/*-------------
+ /COMMON
+------------ */
